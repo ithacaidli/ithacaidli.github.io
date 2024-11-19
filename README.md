@@ -1,2 +1,1 @@
-# ithacaidli.github.io
-Ithaca Idli
+## Ithaca Idli Website
