@@ -5,7 +5,10 @@ const Header = () => (
   <header>
     <div className="header-container">
       <div className="logo">
-        <img src="/logo.png" alt="Ithaca Idli Logo" />
+        <img
+          src={`${process.env.PUBLIC_URL}/logo.png`}
+          alt="Ithaca Idli Logo"
+        />
         <h1>Ithaca Idli</h1>
       </div>
       <nav>
