@@ -10,10 +10,10 @@ const About = () => (
           alt="The Founders"
         />
         <p>
-          We are a group of four passionate food enthusiasts dedicated to
-          bringing the authentic taste of South Indian cuisine to Ithaca. Our
-          shared love for food and community led to the creation of Ithaca Idli,
-          where we celebrate tradition, quality, and inclusivity.
+          We are a group of 4 seniors at Cornell who have all grown up on 
+          South Indian Cuisine. We are passionate and dedicated to bringing the 
+          authentic taste of South Indian cuisine to Ithaca. Our
+          shared love for food and community led to the creation of Ithaca Idli!
         </p>
       </div>
     </section>
@@ -21,9 +21,11 @@ const About = () => (
     <section className="about-us-section">
       <h1>Why We Started</h1>
       <p>
-        Our mission is to provide the Ithaca community with a taste of home and
-        authenticity. We started Ithaca Idli to share the joy of South Indian
-        cuisine with everyone while preserving its rich culinary heritage.
+        Growing up in South Asian Households and coming to Cornell, we noticed
+        a lack of South Indian cuisine throughout Ithaca. Yet, there was still
+        a large demand. We decided to take matters into our own hand and provide
+        the greater Cornell community with authentic South Indian cuisine in the 
+        form of Idli!
       </p>
       <img
         className="idli"
