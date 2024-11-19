@@ -18,9 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Align items vertically */
-  max-width: 100%; /* Full width to remove unnecessary left/right padding */
-  margin: 0 auto; /* Center the header content */
-  padding: 0 15px; /* Minimal padding for the container edges */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .logo {
@@ -42,7 +42,7 @@ header {
 
 nav ul {
   list-style: none;
-  display: flex;
+  display: flex; /* Keep navigation buttons horizontally aligned */
   gap: 10px; /* Minimal gap between navigation buttons */
   margin: 0;
   padding: 0; /* Remove extra padding around buttons */
@@ -66,13 +66,13 @@ nav ul li a:hover {
 main {
   text-align: center;
   padding: 40px; /* Balanced padding for the main section */
-  background-color: #f8fbfd; /* Soft white background */
+  background-color: #f8fbfd;
 }
 
 main h1 {
   font-size: 2em;
   font-weight: bold;
-  color: #1f3b4d; /* Dark teal text color */
+  color: #1f3b4d;
 }
 
 main p {
@@ -134,16 +134,93 @@ footer img {
 }
 
 .about-us-section .idli {
-  max-width:50%;
+  max-width: 50%;
 }
 
 .founders img {
   max-width: 30%;
   height: auto;
-  /* border-radius: 100%; */
 }
 
 .founders p {
   max-width: 600px;
   text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust header */
+  .header-container {
+    flex-direction: column; /* Stack logo and navigation */
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: row; /* Keep navigation buttons horizontally aligned */
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.9em;
+    padding: 8px 10px; /* Slightly smaller buttons */
+  }
+
+  /* Adjust About Us sections */
+  .about-us-section {
+    padding: 20px;
+  }
+
+  .about-us-section h2 {
+    font-size: 1.8em;
+  }
+
+  .founders {
+    flex-direction: column; /* Stack founders vertically */
+    text-align: center;
+  }
+
+  .founders img {
+    max-width: 80%; /* Resize founder images */
+  }
+
+  .founders p {
+    max-width: 90%; /* Full-width text */
+  }
+
+  .about-us-section .idli {
+    max-width: 90%; /* Full-width idli image */
+  }
+
+  /* Adjust footer */
+  footer img {
+    max-width: 40px; /* Smaller footer logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.2em;
+  }
+
+  nav ul li a {
+    font-size: 0.8em;
+    padding: 6px 8px; /* Smaller buttons */
+  }
+
+  main h1 {
+    font-size: 1.5em;
+  }
+
+  .about-us-section h2 {
+    font-size: 1.5em;
+  }
+
+  .founders img {
+    max-width: 70%; /* Smaller founder images on very small screens */
+  }
+
+  .about-us-section .idli {
+    max-width: 100%; /* Full-width idli image */
+  }
 }
